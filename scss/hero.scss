@@ -1,0 +1,39 @@
+.hero {
+    background-image: linear-gradient(
+        to bottom, rgba(255, 209, 64,.8),
+        rgba(255, 209, 64,.8))
+        ,url(../images/home-hero.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .centered-content {
+        width: 300px;
+        text-align: center;
+
+        .header-text {
+            color: white;
+            font-family: PTSerifReg;
+            font-size: 40px;
+            white-space: nowrap;
+        }
+
+        .p-text {
+            font-family: PTSerifItalic;
+            font-size: 20px;
+            color: #ee4367;
+        }
+
+        .text2 {
+            font-family: PTSerifItalic;
+            font-size: 20px;
+            color: white;
+            width: 300px;
+        }
+    }
+}

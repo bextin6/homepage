@@ -1,0 +1,42 @@
+nav {
+    width: 980px;
+    height: 90px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-bottom: solid 2px #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .logo {
+        position: relative;
+        width: 92px;
+        height: 42px;
+        border: solid 2px #ffffff;
+
+        span {
+            position: absolute;
+            bottom: -5px;
+            color: white;
+        }
+    }
+
+    .links {
+        width: 350px;
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        span {
+            color: #ee4367;
+        }
+
+    }
+
+}

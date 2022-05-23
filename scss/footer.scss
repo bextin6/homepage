@@ -1,0 +1,107 @@
+footer {
+    height: 455px;
+    background-color: #ee4367;
+
+    .p-text {
+        width: 1300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        font-family: GilSansReg;
+        font-size: 16px;
+        color: white;
+    }
+
+    .p-text2 {
+        width: 1300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: GilSansReg;
+        font-size: 16px;
+        color: white;
+    }
+
+    .p-text3 {
+        width: 1300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: GilSansReg;
+        font-size: 16px;
+        color: white;
+    }
+
+    .copyright {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 80px;
+        font-family: GilSansReg;
+        font-size: 12px;
+        color: rgba(255, 255, 255, .5)
+    }
+
+    .center {
+        width: 1300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        
+    .logo {
+        position: relative;
+        width: 92px;
+        height: 42px;
+        border: solid 2px #ffffff;
+        justify-content: center;
+        margin-top: 50px;
+
+        span {
+            font-family: GilSansReg;
+            font-size: 20px;
+            position: absolute;
+            bottom: -5px;
+            color: white;
+            }
+        }
+
+    }
+    .signup {
+        height: 60px;
+        display: flex;
+        margin-left: 300px;
+        margin-top: 50px;
+
+        input {
+            height: 100%;
+            width: 529px;
+            background-color: #f56b88;
+            border: none;
+            color: rgba(238, 67, 103, 1);
+            font-size: 16px;
+            padding-left: 15px;
+        }
+
+        ::placeholder {
+            color: rgba(238, 67, 103, 1);
+            opacity: 1;
+        }
+
+        .button {
+            height: 100%;
+            width: 167px;
+            background-color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: GilSansReg;
+            font-size: 16px;
+            color: #ee4367;
+        }
+    }
+
+}
+    

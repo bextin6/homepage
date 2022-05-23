@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: GillSansReg;
+  src: url(fonts/GillSans.ttc);
+}
+@font-face {
+  font-family: PTSerifReg;
+  src: url(fonts/PTSerif-Regular.ttf);
+}
+@font-face {
+  font-family: PTSerifItalic;
+  src: url(fonts/PTSerif-Italic.ttf);
+}
+nav {
+  width: 980px;
+  height: 90px;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  border-bottom: solid 2px #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .logo {
+  position: relative;
+  width: 92px;
+  height: 42px;
+  border: solid 2px #ffffff;
+}
+nav .logo span {
+  position: absolute;
+  bottom: -5px;
+  color: white;
+}
+nav .links {
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+nav .links a {
+  text-decoration: none;
+  color: white;
+}
+nav .links span {
+  color: #ee4367;
+}
+
+.hero {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 209, 64, 0.8)), to(rgba(255, 209, 64, 0.8))), url(../images/home-hero.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url(../images/home-hero.jpg);
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hero .centered-content {
+  width: 300px;
+  text-align: center;
+}
+.hero .centered-content .header-text {
+  color: white;
+  font-family: PTSerifReg;
+  font-size: 40px;
+  white-space: nowrap;
+}
+.hero .centered-content .p-text {
+  font-family: PTSerifItalic;
+  font-size: 20px;
+  color: #ee4367;
+}
+.hero .centered-content .text2 {
+  font-family: PTSerifItalic;
+  font-size: 20px;
+  color: white;
+  width: 300px;
+}
+
+.quote {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.quote .content {
+  width: 789px;
+}
+.quote .content .quote-text {
+  font-family: GillSansReg;
+  font-style: italic;
+  font-size: 15px;
+  color: #FFd140;
+}
+.quote .content .author {
+  font-family: PTSerifReg;
+  font-size: 15px;
+  color: #ee4367;
+  margin-bottom: 0px;
+}
+.quote .content .title {
+  font-family: PTSerifReg;
+  font-size: 10px;
+  color: #a8a8a8;
+}
+
+.upcoming-events {
+  height: 320px;
+  background-color: #540d6e;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 40px;
+}
+.upcoming-events .title {
+  font-family: GillSansReg;
+  font-size: 18px;
+  margin-top: -30px;
+  height: 35px;
+  width: 392px;
+  border-bottom: solid 2px white;
+  padding-bottom: 40px;
+}
+.upcoming-events .events {
+  height: 124px;
+  margin-top: -120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.upcoming-events .events .event {
+  width: 210px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.upcoming-events .events .event .date {
+  width: 60px;
+  height: 60px;
+  background-color: #ee4367;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.upcoming-events .events .event .event-detail {
+  font-family: GillSansReg;
+  font-size: 12px;
+  width: 140px;
+}
+.upcoming-events .events .event .event-detail .highlights {
+  font-family: GillSansReg;
+  font-size: 15px;
+}
+.upcoming-events .events .event .event-detail .details {
+  font-family: GillSansReg;
+  font-size: 13px;
+  color: #ee4367;
+}
+
+footer {
+  height: 455px;
+  background-color: #ee4367;
+}
+footer .p-text {
+  width: 1300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+  font-family: GilSansReg;
+  font-size: 16px;
+  color: white;
+}
+footer .p-text2 {
+  width: 1300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: GilSansReg;
+  font-size: 16px;
+  color: white;
+}
+footer .p-text3 {
+  width: 1300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: GilSansReg;
+  font-size: 16px;
+  color: white;
+}
+footer .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 80px;
+  font-family: GilSansReg;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+footer .center {
+  width: 1300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer .center .logo {
+  position: relative;
+  width: 92px;
+  height: 42px;
+  border: solid 2px #ffffff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+footer .center .logo span {
+  font-family: GilSansReg;
+  font-size: 20px;
+  position: absolute;
+  bottom: -5px;
+  color: white;
+}
+footer .signup {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 300px;
+  margin-top: 50px;
+}
+footer .signup input {
+  height: 100%;
+  width: 529px;
+  background-color: #f56b88;
+  border: none;
+  color: #ee4367;
+  font-size: 16px;
+  padding-left: 15px;
+}
+footer .signup ::-webkit-input-placeholder {
+  color: #ee4367;
+  opacity: 1;
+}
+footer .signup ::-moz-placeholder {
+  color: #ee4367;
+  opacity: 1;
+}
+footer .signup :-ms-input-placeholder {
+  color: #ee4367;
+  opacity: 1;
+}
+footer .signup ::-ms-input-placeholder {
+  color: #ee4367;
+  opacity: 1;
+}
+footer .signup ::placeholder {
+  color: #ee4367;
+  opacity: 1;
+}
+footer .signup .button {
+  height: 100%;
+  width: 167px;
+  background-color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: GilSansReg;
+  font-size: 16px;
+  color: #ee4367;
+}
