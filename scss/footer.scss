@@ -1,9 +1,10 @@
 footer {
     height: 455px;
     background-color: #ee4367;
+    margin: 0 auto;
 
     .p-text {
-        width: 1300px;
+        max-width: 1300px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -14,7 +15,7 @@ footer {
     }
 
     .p-text2 {
-        width: 1300px;
+        max-width: 1300px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -24,7 +25,7 @@ footer {
     }
 
     .p-text3 {
-        width: 1300px;
+        max-width: 1300px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -44,7 +45,7 @@ footer {
     }
 
     .center {
-        width: 1300px;
+        max-width: 1300px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -68,11 +69,20 @@ footer {
         }
 
     }
+
+    .signup-wrapper {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+    
+
     .signup {
         height: 60px;
         display: flex;
-        margin-left: 300px;
-        margin-top: 50px;
+        max-width: 696px;
+        margin: 0 auto;
 
         input {
             height: 100%;
@@ -102,6 +112,14 @@ footer {
             color: #ee4367;
         }
     }
-
 }
-    
+
+}  
+
+@media (max-width: 1000px){
+    .signup-wrapper {
+        .signup {
+            flex-wrap: wrap;
+    }
+}
+}

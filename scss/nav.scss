@@ -1,20 +1,23 @@
-nav {
-    width: 980px;
+.nav-wrapper {
     height: 90px;
+    width: 100%;
     position: fixed;
-    left: 50%;
-    transform: translate(-50%, 0);
-    border-bottom: solid 2px #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+    nav {
+        max-width: 980px;
+        height: 90px;
+        margin: 0 auto;
+        border-bottom: solid 2px #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
 
-    .logo {
-        position: relative;
-        width: 92px;
-        height: 42px;
-        border: solid 2px #ffffff;
+        .logo {
+            position: relative;
+            width: 92px;
+            height: 42px;
+            border: solid 2px #ffffff;
 
         span {
             position: absolute;
@@ -33,10 +36,28 @@ nav {
             color: white;
         }
 
-        span {
-            color: #ee4367;
+         span {
+                color: #ee4367;
+            }
+
+        
         }
 
     }
+}
 
+@media only all and (max-width: 980px){
+    .nav-wrapper {
+        nav {
+            padding: 0 30px;     
+        }
+    }
+}
+
+@media only all and (max-width: 800px){
+    .nav-wrapper {
+        nav {
+            padding: 0 10px;     
+        }
+    }
 }

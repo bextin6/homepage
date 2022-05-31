@@ -31,13 +31,15 @@ p {
   font-family: PTSerifItalic;
   src: url(fonts/PTSerif-Italic.ttf);
 }
-nav {
-  width: 980px;
+.nav-wrapper {
   height: 90px;
+  width: 100%;
   position: fixed;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+}
+.nav-wrapper nav {
+  max-width: 980px;
+  height: 90px;
+  margin: 0 auto;
   border-bottom: solid 2px #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,18 +51,18 @@ nav {
       -ms-flex-align: center;
           align-items: center;
 }
-nav .logo {
+.nav-wrapper nav .logo {
   position: relative;
   width: 92px;
   height: 42px;
   border: solid 2px #ffffff;
 }
-nav .logo span {
+.nav-wrapper nav .logo span {
   position: absolute;
   bottom: -5px;
   color: white;
 }
-nav .links {
+.nav-wrapper nav .links {
   width: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -68,14 +70,24 @@ nav .links {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-nav .links a {
+.nav-wrapper nav .links a {
   text-decoration: none;
   color: white;
 }
-nav .links span {
+.nav-wrapper nav .links span {
   color: #ee4367;
 }
 
+@media only all and (max-width: 980px) {
+  .nav-wrapper nav {
+    padding: 0 30px;
+  }
+}
+@media only all and (max-width: 800px) {
+  .nav-wrapper nav {
+    padding: 0 10px;
+  }
+}
 .hero {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 209, 64, 0.8)), to(rgba(255, 209, 64, 0.8))), url(../images/home-hero.jpg);
   background-image: linear-gradient(to bottom, rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url(../images/home-hero.jpg);
@@ -148,33 +160,26 @@ nav .links span {
   color: #a8a8a8;
 }
 
+@media only all and (max-width: 775px) {
+  .quote {
+    padding: 0 20px;
+  }
+}
 .upcoming-events {
-  height: 320px;
   background-color: #540d6e;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 0 40px;
+  padding: 40px;
 }
 .upcoming-events .title {
   font-family: GillSansReg;
   font-size: 18px;
-  margin-top: -30px;
   height: 35px;
   width: 392px;
   border-bottom: solid 2px white;
   padding-bottom: 40px;
 }
 .upcoming-events .events {
-  height: 124px;
-  margin-top: -120px;
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,7 +189,7 @@ nav .links span {
 }
 .upcoming-events .events .event {
   width: 210px;
-  height: 100%;
+  height: 124px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,12 +230,19 @@ nav .links span {
   color: #ee4367;
 }
 
+@media (max-width: 1140px) {
+  .upcoming-events .events {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 footer {
   height: 455px;
   background-color: #ee4367;
+  margin: 0 auto;
 }
 footer .p-text {
-  width: 1300px;
+  max-width: 1300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,7 +258,7 @@ footer .p-text {
   color: white;
 }
 footer .p-text2 {
-  width: 1300px;
+  max-width: 1300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,7 +273,7 @@ footer .p-text2 {
   color: white;
 }
 footer .p-text3 {
-  width: 1300px;
+  max-width: 1300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,7 +301,7 @@ footer .copyright {
   color: rgba(255, 255, 255, 0.5);
 }
 footer .center {
-  width: 1300px;
+  max-width: 1300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,15 +329,25 @@ footer .center .logo span {
   bottom: -5px;
   color: white;
 }
-footer .signup {
+footer .signup-wrapper {
+  height: 60px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .signup-wrapper .signup {
   height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 300px;
-  margin-top: 50px;
+  max-width: 696px;
+  margin: 0 auto;
 }
-footer .signup input {
+footer .signup-wrapper .signup input {
   height: 100%;
   width: 529px;
   background-color: #f56b88;
@@ -334,27 +356,27 @@ footer .signup input {
   font-size: 16px;
   padding-left: 15px;
 }
-footer .signup ::-webkit-input-placeholder {
+footer .signup-wrapper .signup ::-webkit-input-placeholder {
   color: #ee4367;
   opacity: 1;
 }
-footer .signup ::-moz-placeholder {
+footer .signup-wrapper .signup ::-moz-placeholder {
   color: #ee4367;
   opacity: 1;
 }
-footer .signup :-ms-input-placeholder {
+footer .signup-wrapper .signup :-ms-input-placeholder {
   color: #ee4367;
   opacity: 1;
 }
-footer .signup ::-ms-input-placeholder {
+footer .signup-wrapper .signup ::-ms-input-placeholder {
   color: #ee4367;
   opacity: 1;
 }
-footer .signup ::placeholder {
+footer .signup-wrapper .signup ::placeholder {
   color: #ee4367;
   opacity: 1;
 }
-footer .signup .button {
+footer .signup-wrapper .signup .button {
   height: 100%;
   width: 167px;
   background-color: white;
@@ -371,4 +393,11 @@ footer .signup .button {
   font-family: GilSansReg;
   font-size: 16px;
   color: #ee4367;
+}
+
+@media (max-width: 1000px) {
+  .signup-wrapper .signup {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
